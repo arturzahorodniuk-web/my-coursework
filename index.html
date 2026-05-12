@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна | Приватний лікар</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 15px 0 0 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffc107;
+        }
+        
+        /* Стилі для великого банера з фото клініки */
+        .hero-section {
+            /* Тут ми ставимо фото клініки і накладаємо напівпрозорий синій фільтр */
+            background: linear-gradient(rgba(0, 86, 179, 0.7), rgba(0, 86, 179, 0.7)), url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            margin-bottom: 40px;
+        }
+        .hero-section h2 {
+            font-size: 36px;
+            margin: 0 0 15px 0;
+            color: white;
+        }
+        .hero-section p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        main {
+            max-width: 1000px; /* Зробили сторінку ширшою для карток лікарів */
+            margin: 0 auto 40px auto;
+            padding: 0 20px;
+        }
+        
+        .section-title {
+            text-align: center;
+            color: #0056b3;
+            font-size: 28px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #0056b3;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .center-wrapper {
+            text-align: center;
+        }
+
+        /* Стилі для блоку з лікарями */
+        .doctors-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .doctor-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        .doctor-card:hover {
+            transform: translateY(-10px); /* Ефект підняття при наведенні */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .doctor-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #0056b3;
+            margin-bottom: 15px;
+        }
+        .doctor-card h3 {
+            margin: 0 0 5px 0;
+            color: #333;
+            font-size: 20px;
+        }
+        .doctor-card p {
+            margin: 0;
+            color: #666;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #343a40;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Медичний кабінет доктора Загороднюка</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="services.html">Послуги та ціни</a></li>
+                <li><a href="booking.html">Запис на прийом</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Головний банер (Hero Section) з фото клініки -->
+    <div class="hero-section">
+        <h2>Ваше здоров'я — наш абсолютний пріоритет</h2>
+        <p>Сучасна клініка, оснащена за останнім словом техніки. Ми надаємо кваліфіковану медичну допомогу, забезпечуючи комфорт та конфіденційність для кожного пацієнта.</p>
+    </div>
+
+    <main>
+        <!-- Блок з командою лікарів -->
+        <div class="center-wrapper">
+            <h2 class="section-title">Гордість нашої клініки</h2>
+        </div>
+        <p style="text-align: center; margin-bottom: 40px; color: #555; font-size: 18px;">
+            Наш медичний кабінет тримається на високому професіоналізмі, багаторічному досвіді та людяності нашої команди. Ми об'єднали найкращих спеціалістів заради вашого здоров'я.
+        </p>
+
+        <div class="doctors-container">
+            <!-- Лікар 1 -->
+            <div class="doctor-card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.KANTMdxksBuHENlUx989xgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Лікар Загороднюк">
+                <h3>Загороднюк Артур Ігорович</h3>
+                <p>Головний лікар, Терапевт</p>
+            </div>
+            
+            <!-- Лікар 2 -->
+            <div class="doctor-card">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=300&q=80" alt="Лікар Коваленко">
+                <h3>Кочубей Аліна Іванівна</h3>
+                <p>Лікар-кардіолог</p>
+            </div>
+
+            <!-- Лікар 3 -->
+            <div class="doctor-card">
+                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=300&q=80" alt="Лікар Шевченко">
+                <h3>Піхур Едуард Анатолійович</h3>
+                <p>Лікар-невролог</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Приватний медичний кабінет. Всі права захищені.</p>
+    </footer>
+
+</body>
+</html>
